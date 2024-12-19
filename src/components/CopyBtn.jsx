@@ -8,6 +8,9 @@ const CopyBtn = ({password}) => {
         if(password){
             navigator.clipboard.writeText(password);
             setCopyStatus("Password Copied ✅");
+            setTimeout(()=>{
+              setCopyStatus("Copy Password")
+            }, 3500)
         } else{
             setCopyStatus("❗Generate Password First❗")
             setTimeout(()=>{
