@@ -30,7 +30,9 @@ const Slider = () => {
         ></input>
         <div className=" text-xl font-semibold text-green-600 ">50</div>
       </div>
-
+      <div>
+        <div>Password Length : {slideNum}</div>
+      </div>
       <div className=" w-full flex flex-col justify-center items-center">
         <button
           onClick={() => {
